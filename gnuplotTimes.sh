@@ -7,8 +7,8 @@ set yrange ["10.00":"15.00"]
 set xlabel "Days"
 set ylabel "Pace (minutes)"
 set mytics 4
-set grid xtics mytics ytics
 set xtics 24*60*60
+set grid xtics mytics ytics
 f(x) = mean_y
 fit f(x) 'mileTimes.dat' u 1:2 via mean_y
 set label 1 sprintf("AVG = %f",mean_y) at graph 0.4,0.15
