@@ -3,11 +3,11 @@ set title "Total Workout Distance"
 set xdata time
 set timefmt "%m/%d/%Y"
 set format x "%m/%d"
-set yrange ["0.00":"8.00"]
+set yrange ["0.00":"10.00"]
 set xlabel "Days"
 set ylabel "Distance (Miles)"
 set mytics 8
-set xtics 7*24*60*60
+set xtics 2*7*24*60*60
 set grid xtics mytics ytics
 f(x) = mean_r
 g(x) = mean_b
